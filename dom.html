@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="greeting">Hello!!</h1>
+
+<p tag="p"></p>
+
+<script type="text/javascript">
+
+console.log(document.title);
+document.title = "Hello, JavaScript";
+
+var newHeading = document.getElementById("greeting");
+newHeading.innerHTML = "Hello, JavaScript!!";
+
+var newHeading2 = document.getElementsByTagName("h1");
+newHeading2[0].innerHTML = "Hello, Tags!!";
+
+var newParagraph = document.createElement("p");
+newParagraph.innerText = "Made with JavaScript";
+document.body.appendChild (newParagraph);
+</script>
+</body>
+</html>
